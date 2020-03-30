@@ -1,121 +1,134 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
- 
-    <title>Lorecast</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/jumbotron/">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Here is the title</title>
+     <!--downloaded bootstrap file to host locally-->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
 
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <!-- Favicons -->
-<link rel="apple-touch-icon" href="/docs/4.4/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
-<link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-<link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-<link rel="manifest" href="/docs/4.4/assets/img/favicons/manifest.json">
-<link rel="mask-icon" href="/docs/4.4/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
-<link rel="icon" href="/docs/4.4/assets/img/favicons/favicon.ico">
-<meta name="msapplication-config" content="/docs/4.4/assets/img/favicons/browserconfig.xml">
-<meta name="theme-color" content="#563d7c">
+  <!--font awesome icons-->
 
+  <link rel="stylesheet" href="css/all.min.css">
 
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
+  <!--Custom css file-->
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
-    <!-- Custom styles for this template -->
-    <link href="jumbotron.css" rel="stylesheet">
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-  <a class="navbar-brand" href="#">Lorecast WeatherApp</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-    <ul class="navbar-nav mr-auto">
-      
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </div>
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">Lorecast WeatherApp</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+        aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" id="searchbar" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" id="myButton" type="submit">Search</button>
+        </form>
+    </div>
 </nav>
 
 <main role="main">
 
-  <!-- Main jumbotron for a primary marketing message or call to action -->
-  <div class="jumbotron">
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="display-3">Let's get the weather!</h1>
+            <p>Use the searchbar in the navbar to search a city and display the current weahter below. Hit 'clear'
+                to clear results.</p>
+            <!-- Search form -->
+            <div class="active-cyan-3 active-cyan-4 mb-4">
+                <input class="form-control" id="search" type="text" placeholder="City" aria-label="Search">
+
+            </div>
+            <p><a class="btn btn-primary btn-lg" href="#" role="button">Search &raquo;</a></p>
+        </div>
+
+    </div>
+    </div>
+    </div>
     <div class="container">
-      <h1 class="display-3">Let's fuck with the weather!</h1>
-      <p>Use the searchbar in the navbar to search a city and display the current weahter below.  Hit 'clear' to clear results.</p>
-      <p><a class="btn btn-primary btn-lg" href="#" role="button">Clear &raquo;</a></p>
-    </div>
-  </div>
+        <!-- Example row of columns -->
+        <div class="row">
+            <div class="col-md-4" id="box1">
+                <h2>display1</h2>
+                <p>All of these divs will remain empty when website loads </p>
+                <p><a class="btn btn-secondary" href="#" role="button">Future Forecast &raquo;</a></p>
+            </div>
+            <div class="col-md-4">
+                <h2>display2</h2>
+                <p>When search is clicked, in the first box, city name will be replaced with the searched city. This
+                    content will get replaced with the current weather information. </p>
+                <p><a class="btn btn-secondary" href="#" role="button">Future Forecast &raquo;</a></p>
+            </div>
+            <div class="col-md-4">
+                <h2>display3</h2>
+                <p>When search is clicked again, the next box will be filled in with the next city searched, and so
+                    on for all of the boxes.</p>
+                <p><a class="btn btn-secondary" href="#" role="button">Future Forecast &raquo;</a></p>
+            </div>
+        </div>
+        <hr> <br>
+        <div class="row">
+            <div class="col-md-4">
+                <h2>display4</h2>
+                <p>if a user hits 'future' under the city's current forecast, the current information will be
+                    replaced with the data from the furure forecast. </p>
+                <p><a class="btn btn-secondary" href="#" role="button">Future Forecast &raquo;</a></p>
+            </div>
+            <div class="col-md-4">
+                <h2>display5</h2>
+                <p>As the user hits 'future', the forecast will show the next day's forecast, with the current
+                    weather going under it. </p>
+                <p><a class="btn btn-secondary" href="#" role="button">Future Forecast &raquo;</a></p>
+            </div>
+            <div class="col-md-4">
+                <h2>display6</h2>
+                <p>As the user clicks it each time, the info will be added, with the forecast for the following day
+                    after that, up to five days in a row, one day of forecast added for each click.</p>
+                <p><a class="btn btn-secondary" href="#" role="button">Future Forecast &raquo;</a></p>
+            </div>
+        </div>
+        <hr>
 
-  <div class="container">
-    <!-- Example row of columns -->
-    <div class="row">
-      <div class="col-md-4">
-        <h2>display1</h2>
-        <p>All of these divs will remain empty when website loads </p>
-        <p><a class="btn btn-secondary" href="#" role="button">Future Forecast &raquo;</a></p>
-      </div>
-      <div class="col-md-4">
-        <h2>display2</h2>
-        <p>When search is clicked, in the first box, city name will be replaced with the searched city.  This content will get replaced with the current weather information. </p>
-        <p><a class="btn btn-secondary" href="#" role="button">Future Forecast &raquo;</a></p>
-      </div>
-      <div class="col-md-4">
-        <h2>display3</h2>
-        <p>When search is clicked again, the next box will be filled in with the next city searched, and so on for all of the boxes.</p>
-        <p><a class="btn btn-secondary" href="#" role="button">Future Forecast &raquo;</a></p>
-      </div>
-    </div>
-<hr> <br>
-<div class="row">
-    <div class="col-md-4">
-      <h2>display4</h2>
-      <p>if a user hits 'future' under the city's current forecast, the current information will be replaced with the data from the furure forecast. </p>
-      <p><a class="btn btn-secondary" href="#" role="button">Future Forecast &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-      <h2>display5</h2>
-      <p>As the user hits 'future', the forecast will show the next day's forecast, with the current weather going under it.   </p>
-      <p><a class="btn btn-secondary" href="#" role="button">Future Forecast &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-      <h2>display6</h2>
-      <p>As the user clicks it each time, the info will  be added, with the forecast for the following day after that, up to five days in a row, one day of forecast added for each click.</p>
-      <p><a class="btn btn-secondary" href="#" role="button">Future Forecast &raquo;</a></p>
-    </div>
-  </div>
-    <hr>
-
-  </div> <!-- /container -->
+    </div> <!-- /container -->
 
 </main>
 
 <footer class="container">
-  <p>&copy; Lorecast Fantasy Weather Company BC3000-2020</p>
+    <p>&copy; Lorecast Fantasy Weather Company BC3000-2020</p>
 </footer>
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-      <script>window.jQuery || document.write('<script src="/docs/4.4/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="/docs/4.4/dist/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script></body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!--- Jquery js-->
+
+  <script src="js/jquery.3.4.1.js"></script>
+
+  <!--dowloaded js files to host locally-->
+  <script src="js/bootstrap.min.js"></script>
+
+  <!--  custom js file  -->
+  <script src="js/script.js"></script>
+</body>
+
 </html>
