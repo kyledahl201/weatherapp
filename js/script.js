@@ -93,11 +93,11 @@ $(document).ready(function () {
             
             //fill newly created divs
             cityEl.text(city)
-            iconEl.attr("src", icon)
-            weatherEl.text(weather)
-            temperatureEl.text(temperatureF)
-            windSpeedEl.text(windSpeed)
-            humidityEl.text(humidity)
+            // iconEl.attr("src" + icon)
+            weatherEl.text("Current weather: " + weather)
+            temperatureEl.text("Temperature: " + temperatureF)
+            windSpeedEl.text("Wind speed: " + windSpeed)
+            humidityEl.text("Humidity: " + humidity)
 
             //append elements to thumbnail div
             
